@@ -6,25 +6,25 @@ Raw data and source code for the paper Evidential value of country location evid
 
 ## Directories
 
-- atlas - daily operational reports for Atlas devices 2015 to 2022 (raw data)
-- figures - generated plots for commercial geolocation database IP2Location DB1
+- atlas - daily operational reports of Atlas devices 2015 to 2022 (raw data)
+- figures - generated plots for the commercial geolocation database IP2Location DB1
 - geodata - free geolocation database IP2Location DB1 LITE
 - geography - country border maps
 - history - compiled historical dataset
-- maps - Atlas coverage maps for countries
-- precomp - precomputed historical data and IP locations
+- maps - Atlas coverage maps in countries
+- precomp - precomputed historical dataset
 
 ## Files
 - notebook.inbp - notebook with source code
 - enviroment.txt - python and module versions
 
 # Reproducibility
-The notebook with preloaded data reproduces the results for the free geolocation database.
+The notebook reproduces the results for the free geolocation database.
 
 ## Database license
 
 The notebook works by default with the free version of the geolocation database. The commercial version cannot be distributed with source code. 
-To use the commercial database in the notebook, obtain it [here](https://www.ip2location.com/database/ip2location) and edit this code line to replace the free database with the commercial version:
+The commercial database can be obtained [here](https://www.ip2location.com/database/ip2location). Edit this code line to replace the free database with the commercial version:
 
 ```python
 database = ipl.IP2Location('geodata/IP2LOCATION-LITE-DB1.BIN','SHARED_MEMORY')
@@ -32,7 +32,7 @@ database = ipl.IP2Location('geodata/IP2LOCATION-LITE-DB1.BIN','SHARED_MEMORY')
 
 ## Time of data processing
 
-Due to large data, the processing may take a long time depending on the hardware. Precomputed results are provided to run the notebook quickly. Preprocessed is the historical dataset and IP locations. By default, the precomputed results for the historical dataset are used. Set the values to False to process the raw data from scratch.
+The processing may take a long time depending on the hardware. Precomputed results are provided to run the notebook quickly. Preprocessed is the historical dataset and geolocations. By default, the precomputed historical dataset is used. Set the values to False to process the raw data from scratch.
 
 ```python
 precompdata = True
@@ -42,7 +42,7 @@ precomploc = True
 # Links to used data
 - RIPE Atlas archive (free) is available [here](https://ftp.ripe.net/ripe/atlas/probes/archive/)
 - Country IP geolocation database (free) is available [here](https://lite.ip2location.com/ip2location-lite)
-- Country IP geolocation database (paid) can be obtained [here](https://www.ip2location.com/database/ip2location)
+- Country IP geolocation database (commercial) can be obtained [here](https://www.ip2location.com/database/ip2location)
 - Country border maps (free) are available [here](https://www.naturalearthdata.com/downloads/)
 
 # Acknowledgment
