@@ -1,6 +1,6 @@
 # Country location evidence from IP address
 
-Raw data and source code for the paper Evidential value of country location evidence obtained from IP address geolocation.
+Raw data and source code for the paper [Evidential value of country location evidence obtained from IP address geolocation](https://peerj.com/articles/cs-1305/).
 
 # Content
 
